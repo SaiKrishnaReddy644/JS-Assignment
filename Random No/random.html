@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function random() {
+           var d=document.getElementById("random").innerText;
+            var ran=Math.floor((Math.random() * 10) + 1);
+            if(ran===d){
+                document.write("Good Work");
+            }else{
+                document.write("Not Matched");
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="random"/>
+<button onclick="random()">Submit</button>
+</body>
+</html>

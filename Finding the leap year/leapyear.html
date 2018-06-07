@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <script>
+       function leapyear() {
+           var year = document.getElementById("result").innerText;
+           year=parseInt(year);
+           if (year != null) {
+               if (year % 4 == 0) {
+                   if (year % 100 == 0) {
+                       // year is divisible by 400, hence the year is a leap year
+                       if (year % 400 == 0)
+                           document.write("given year is leap year");
+                       else
+                           document.write("given year is not a leap year.");
+                   }
+                   else document.write("given year is a leap year.");
+               }
+               else
+                   document.write("given year is not a leap year.");
+           }
+       }
+   </script>
+</head>
+<body>
+<input type="text" id="result"></body>
+<button onclick="leapyear()">Submit</button>
+
+</body>
+</html>

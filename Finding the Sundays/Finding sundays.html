@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function sundays() {
+            for (i = 2014; i <= 2050; i++) {
+                var d = new Date(i, 0, 1);
+                if (d.getDay() === 0) {
+                    document.write(d.getFullYear()+" 1st january is a sunday"+"<br>");
+                }
+
+            }
+        }
+        sundays();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
