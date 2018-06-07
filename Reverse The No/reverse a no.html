@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <script>
-        function rev_num()
+        function revnum()
         {
-            var num = prompt("Enter the number to be reveresed :", " ");
+            var num= document.getElementById("rev").value;
             var n= num;
             var rev = 0, rem;
             while (n>0)
@@ -16,11 +16,11 @@
             }
             document.write("The given number is : " +num+ " <br/> The reversed number is : " +rev+ "\n");
         }
-rev_num();
 
     </script>
 </head>
 <body>
-
+<input type="text" id="rev">
+<button onclick="revnum()">submit</button>
 </body>
 </html>
